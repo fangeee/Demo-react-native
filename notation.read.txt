@@ -1,1 +1,14 @@
 map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。
+
+Most components can be customized when they are created, with different parameters. 
+These creation parameters are called props, short for properties.
+
+
+const [isAddModel,setIsAddModel] = useState(false);
+isAddModel设置的state变量名    setIsAddModel 改变这个变量名的方法
+
+
+
+ <GoalInput visible={isAddModel} onAddGoal={addGoalHandler}/>
+ <Modal visible={props.visible}>  这里的visivle就是app里面的visible
+不同components之间 用props传递变量
